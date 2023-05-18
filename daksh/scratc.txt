@@ -20,3 +20,35 @@ Index(['Energy with dietary fibre, equated \n(kJ)',
        'C18:3w3 (g)', 'Total polyunsaturated fatty acids, equated \n(g)',
        'Total trans fatty acids, imputed \n(mg)', 'Tryptophan \n(mg)'],
       dtype='object')
+
+
+
+Data Pipeline:
+1. Export CSV from Excel using Apple Numbers
+2. Read CSV into Pandas Dataframe
+
+** Data Wrangling **
+3. Drop Fully empty columns
+4. Split into Train and test (20%)
+5. Remove columns with more than 10% missing data
+6. Remove columns with more than 50% zeroes
+7. Drop Text Based Columns
+8. Dropped removed columns from test dataset
+9. Removed outliers (Beyond 3Z)
+10. Impute missing values with column mean
+11. Remove Columns with empty values from test data
+12. Normalise both datasets
+
+** Model Fitting **
+13. Plot correlation graph, not sure if including coz tid bit ugly
+14. Split data into X (Columns used for prediction) and Y (Columns to Predict)
+15. Hide columns which are naturally co-related with Y
+16. Fit Linear Regression Model
+
+** Model Testing **
+17. Calculate Mean Squared Error from Train Dataset and Test Dataset
+18. Print and Plot the most significant features of X
+
+** Conclusion **
+19. Plot conclusive relationships.
+
